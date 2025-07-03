@@ -28,6 +28,7 @@ newBtn.addEventListener("mouseout", function () {
 
 newBtn.addEventListener("click", () => {
   ranNum = randomNumber();
+  console.log(ranNum);
   newBtn.style.display = "none";
   input.value = "";
   average = 0;
