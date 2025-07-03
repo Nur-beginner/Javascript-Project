@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: rgb(50, 50, 105);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    main {
+      background: grey;
+      width: max-content;
+      height: max-content;
+      padding: 1.5em;
+      border-radius: 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5em;
+    }
+    main > h1 {
+      background: rgba(12, 11, 11, 0.747);
+      padding: 1em;
+      border-radius: 0.5em;
+      text-align: right;
+      color: white;
+    }
+    .btnNumber {
+      padding: 1em;
+      border-radius: 0.5em;
+      display: flex;
+      width: max-content;
+      background: rgb(92, 83, 83);
+      gap: 2.3em;
+    }
+    .number {
+      display: grid;
+      border-radius: 0.5em;
+      grid-template-columns: repeat(3, 40%);
+    }
+    button {
+      background: goldenrod;
+      color: black;
+      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 100%;
+      height: 4em;
+      width: 4em;
+    }
+    .operator {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+  <body>
+    <main class="calculator">
+      <h1 id="result"></h1>
+      <div class="btnNumber">
+        <div class="number">
+          <button value="1">1</button>
+          <button value="2">2</button>
+          <button value="3">3</button>
+          <button value="4">4</button>
+          <button value="5">5</button>
+          <button value="6">6</button>
+          <button value="7">7</button>
+          <button value="8">8</button>
+          <button value="9">9</button>
+          <button value="0">0</button>
+          <button value="+">+</button>
+          <button value="-">-</button>
+        </div>
+        <div class="operator">
+          <button value="C">C</button>
+          <button value="*">X</button>
+          <button value="/">/</button>
+          <button value="%">%</button>
+          <button onclick="answer()">=</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
